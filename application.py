@@ -12,6 +12,6 @@ if __name__ == '__main__':
     except ValueError:
         PORT = 5000
     app.debug = True    
-    app.run(HOST, PORT) #ssl_context='adhoc'
+    app.run(HOST, PORT, ssl_context='adhoc')
     
     

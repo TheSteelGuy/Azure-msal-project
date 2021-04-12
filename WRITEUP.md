@@ -6,7 +6,7 @@
 - *Analyze costs, scalability, availability, and workflow*
 - *Choose the appropriate solution (VM or App Service) for deploying the app*
 - *Justify your choice*
-**Azure VMs**
+- **Azure VMs**
 - Costs
 Azure Vms tend to be much more expensive than Azure App services.
 - Scalability
