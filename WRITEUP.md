@@ -7,27 +7,27 @@
 - *Choose the appropriate solution (VM or App Service) for deploying the app*
 - *Justify your choice*
 - **Azure VMs**
-- Costs
+1. Costs
 Azure Vms tend to be much more expensive than Azure App services.
-- Scalability
+2. Scalability
 Azure VMS are highly scalable as more than one VM can be spawn to allow horizontal sacaling
 They can be used with load balancers to control instances multiple instances depending on the amount of traffic
-- Availability
+3. Availability
 Since Scaling and load balancing is possible with VMs, Apps running on vms can be highly available as load balncers are bale to
 route traffic to fully functional Vm instance, leading to very minimal app downtime.
 
-- WorkFlow
-The process of creating Vms has a lot of configurations in it since as much as alot is abstracted, one still need to do basic configarations such as those of nginx
+4. WorkFlow
+The process of creating Vms has a lot of configurations in it since as much as alot is abstracted, one still need to do basic configarations such as those of nginx(if deploying an app with uses nginx as a server)
 **App Service**
-- Costs
+1. Costs 
 Cheaper compared to Vms
-- Scalability
+1. Scalability
 Vertical scaling possible(but up to a certain limiy). If Horizontal scaling is needed, the use of VMS will be needed
-- Availability
+3. Availability
 High availability and auto-scaling
 
-- Workflow
- Minimal configurations, Continuos  deployment not available
+4. Workflow
+ Minimal configurations, Continuos  deployment  possible with for example github actions
 
  My Choice is ```App Service```
  I choose app service due to the fact that this is a small and basic web app, therefore using a VM would be an overkill
