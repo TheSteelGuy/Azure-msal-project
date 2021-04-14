@@ -2,26 +2,26 @@
 
 ### Analyze, choose, and justify the appropriate resource option for deploying the app.
 
-*For **both** a VM or App Service solution for the CMS app:*
-- *Analyze costs, scalability, availability, and workflow*
-- *Choose the appropriate solution (VM or App Service) for deploying the app*
-- *Justify your choice*
-** Azure VMs
-** Costs
+For **both** a VM or App Service solution for the CMS app:
+- Analyze costs, scalability, availability, and workflow
+- Choose the appropriate solution (VM or App Service) for deploying the app
+- Justify your choice
+ **Azure VMs**
+**Costs**
 Azure Vms tend to be much more expensive than Azure App services.
-** Scalability
+**Scalability**
 Azure VMS are highly scalable as more than one VM can be spawn to allow horizontal sacaling
 They can be used with load balancers to control instances multiple instances depending on the amount of traffic
-** Availability
+**Availability**
 Since Scaling and load balancing is possible with VMs, Apps running on vms can be highly available as load balncers are bale to
 route traffic to fully functional Vm instance, leading to very minimal app downtime.
 
-** WorkFlow
+**WorkFlow**
 The process of creating Vms has a lot of configurations in it since as much as alot is abstracted, one still need to do basic configarations such as those of nginx(if deploying an app with uses nginx as a server)
-## App Service 
+## App Service ##
 ** Costs** 
  - Cheaper compared to Vms
-** Scalability
+**Scalability**
  - Vertical scaling possible(but up to a certain limiy). If Horizontal scaling is needed, the use of VMS will be needed
 **Availability**
 - High availability and auto-scaling
