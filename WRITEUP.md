@@ -20,14 +20,14 @@ route traffic to fully functional Vm instance, leading to very minimal app downt
 The process of creating Vms has a lot of configurations in it since as much as alot is abstracted, one still need to do basic configarations such as those of nginx(if deploying an app with uses nginx as a server)
 **App Service**
 1. Costs 
-Cheaper compared to Vms
+ - Cheaper compared to Vms
 1. Scalability
-Vertical scaling possible(but up to a certain limiy). If Horizontal scaling is needed, the use of VMS will be needed
+ - Vertical scaling possible(but up to a certain limiy). If Horizontal scaling is needed, the use of VMS will be needed
 3. Availability
-High availability and auto-scaling
+- High availability and auto-scaling
 
 4. Workflow
- Minimal configurations, Continuos  deployment  possible with for example github actions
+ - Minimal configurations, Continuos  deployment  possible with for example github actions
 
  My Choice is ```App Service```
  I choose app service due to the fact that this is a small and basic web app, therefore using a VM would be an overkill
