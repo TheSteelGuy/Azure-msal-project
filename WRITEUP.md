@@ -52,5 +52,6 @@ route traffic to fully functional Vm instance, leading to very minimal app downt
 ### Assess app changes that would change your decision.
 
 *Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
+
 To Switch to Vms, the app would have to have grown in size and user base have increased to the extent of needing to use tools like load balancers.
 Also if the needs of an the app as diversified to the extent that i need custom app, developed in lanaguages not supported with app service, finally if i need multiple instances for the purpose of horizontal scaling
