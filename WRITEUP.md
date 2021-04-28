@@ -19,6 +19,7 @@ as well us the freedom of confugurations possiblities offered by azure vms, furt
 - Azure VMS are highly scalable as more than one VM can be spawn to allow horizontal sacaling
 - They can be used with load balancers to control instances multiple instances depending on the amount of traffic
 - According to ms documentation from https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree Platform image: 1000 nodes per scale set, Custom image: 600 nodes per scale set are the scaling limit for vms
+ - 1000 nodes per scale set for platform image and 600 nodes per scale set for custom image
 
 **Availability**
 
@@ -27,7 +28,7 @@ route traffic to fully functional Vm instance, leading to very minimal app downt
 - At the same time availabilty level there might be cases when your application becomes slightly unvailable especially when you have to do  upgrades on or vm cleaning, or problems with your virtual machine can cause some downtimes.
 
 **WorkFlow**
-- The process of creating Vms has a lot of configurations in it since as much as alot is abstracted, one still need to do basic configarations such as those of nginx(if deploying an app with uses nginx as a server)
+- The process of creating Vms has a lot of configurations in it since as much as some concepts are abstracted, one still need to do basic configarations such as those of nginx(if deploying an app with uses nginx as a server)
 - Azure vms gives total control about the  application configuration management
 
 ## App Service ##
@@ -36,11 +37,13 @@ route traffic to fully functional Vm instance, leading to very minimal app downt
 
  - Cheaper compared to Vms, tis comes as a possibility offred by app service to run multiple stack such as python dot NET;
  Therefore its possible to combine multiple apps to save money
- - Finaly testing on free tiers are possible with app service as opposed to Azure VMs
+ - Finaly testing on free tiers are possible with app service as opposed to Azure VMs which offers no free tier
 
 **Scalability**
 
  - Vertical scaling possible(but up to a certain limit). If Horizontal scaling is needed, the use of VMS will be needed
+ - Furthermore utoscaling is a built-in service in App Service, unlike Vms that relies on VM scale sets to support the idea of autoscaliing
+ - 20 instances and 100 with App Service Environment
 
 **Availability**
 - High availability and auto-scaling, futhermore, since azure cloud does all the inhouse maintainace of the containers, breaking the enviroments is less as compared to azure vms. this is possible factor to high availabilty of Azure app services.
